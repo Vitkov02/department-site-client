@@ -1,0 +1,7 @@
+export const ADMIN_ROUTE = '/admin'
+export const LOGIN_ROUTE = '/login'
+export const REGISTRATION_ROUTE = '/registration'
+export const AUDIENCE_ROUTE = '/audience'
+export const TEACHER_ROUTE = '/'
+export const PLANS_ROUTE = '/plans'
+export const WORKS_ROUTE = '/works'
