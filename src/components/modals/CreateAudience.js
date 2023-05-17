@@ -20,7 +20,7 @@ const CreateAudience = ({ show, onHide }) => {
     <Modal show={show} onHide={onHide} size="lg">
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Добавить аудиторию
+          Додати аудіторії
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -31,10 +31,10 @@ const CreateAudience = ({ show, onHide }) => {
       </Modal.Body>
       <Modal.Footer>
         <Button variant={"outline-danger"} onClick={onHide}>
-          Закрыть
+          Закрити
         </Button>
         <Button variant={"outline-success"} onClick={addAudience}>
-          Добавить
+          Додати
         </Button>
       </Modal.Footer>
     </Modal>

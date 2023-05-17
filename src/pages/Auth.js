@@ -40,16 +40,16 @@ const Auth = observer(() => {
       style={{ height: window.innerHeight - 54 }}
     >
       <Card style={{ width: 500 }} className="p-5">
-        <h2 className="m-auto">{isLogin ? "Авторизация" : "Регистрация"}</h2>
+        <h2 className="m-auto">{isLogin ? "Авторизація" : "Реєстрація"}</h2>
         <Form className="d-flex flex-column">
-          <Form.Control onChange={e => setEmail(e.target.value)} value={email}  className="mt-3" placeholder="Введите вашу почту" />
-          <Form.Control onChange={e => setPassword(e.target.value)} value={password}  type="password"  className="mt-3" placeholder="Введите ваш пароль" />
+          <Form.Control onChange={e => setEmail(e.target.value)} value={email}  className="mt-3" placeholder="Введіть вашу пошту" />
+          <Form.Control onChange={e => setPassword(e.target.value)} value={password}  type="password"  className="mt-3" placeholder="Введіть ваш пароль" />
           <Form className="d-flex justify-content-between">
             {isLogin ? (
               <div>
                 <LinkContainer to={REGISTRATION_ROUTE}>
                   <Nav.Link className="mt-3">
-                    <Button variant="link">Регистрация</Button>
+                    <Button variant="link">Реєстрація</Button>
                   </Nav.Link>
                 </LinkContainer>
               </div>
@@ -57,13 +57,13 @@ const Auth = observer(() => {
               <div>
                 <LinkContainer to={LOGIN_ROUTE}>
                   <Nav.Link className="mt-3">
-                    <Button variant="link">Войдите</Button>
+                    <Button variant="link">Увійти</Button>
                   </Nav.Link>
                 </LinkContainer>
               </div>
             )}
             <Button onClick={click} className="mt-2 align-self-end" variant="outline-success">
-              {isLogin ? "Войти" : "Зарегестрироватся"}
+              {isLogin ? "Увійти" : "Зареєструватися"}
             </Button>{" "}
           </Form>
         </Form>

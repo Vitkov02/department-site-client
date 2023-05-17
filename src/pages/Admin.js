@@ -19,7 +19,7 @@ const Admin = () => {
           setTeacherVisible(true);
         }}
       >
-        Добавить преподавателя
+        Додати викладача
       </Button>
       <Button
         variant="outline-primary"
@@ -28,7 +28,7 @@ const Admin = () => {
           setAudienceVisible(true);
         }}
       >
-        Добавить аудиторию
+        Додати аудиторію
       </Button>
       <Button
         variant="outline-primary"
@@ -37,7 +37,7 @@ const Admin = () => {
           setWorkVisible(true);
         }}
       >
-        Добавить работу
+        Додати статтю
       </Button>
       <Button
         variant="outline-primary"
@@ -46,7 +46,7 @@ const Admin = () => {
           setPlanVisible(true);
         }}
       >
-        Добавить уч.план
+        Додати уч.план
       </Button>
       <CreateAudience
         show={audienceVisible}

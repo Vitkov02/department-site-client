@@ -26,7 +26,7 @@ const CreateTeacher = ({ show, onHide }) => {
     <Modal show={show} onHide={onHide} size="lg">
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Добавить преподавателя
+          Додати викладача
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -39,10 +39,10 @@ const CreateTeacher = ({ show, onHide }) => {
       </Modal.Body>
       <Modal.Footer>
         <Button variant={"outline-danger"} onClick={onHide}>
-          Закрыть
+          Закрити
         </Button>
         <Button variant={"outline-success"} onClick={addTeacher}>
-          Добавить
+          Додати
         </Button>
       </Modal.Footer>
     </Modal>

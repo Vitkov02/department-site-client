@@ -20,7 +20,7 @@ const CreateWork = ({ show, onHide }) => {
     <Modal show={show} onHide={onHide} size="lg">
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Добавить статью
+          Додати статтю
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -32,7 +32,7 @@ const CreateWork = ({ show, onHide }) => {
       </Modal.Body>
       <Modal.Footer>
         <Button variant={"outline-danger"} onClick={onHide}>
-          Закрыть
+          Закрити
         </Button>
         <Button variant={"outline-success"} onClick={addWork}>
           Добавить

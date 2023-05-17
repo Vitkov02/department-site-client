@@ -1,12 +1,12 @@
 import React from 'react';
-import {Card} from 'react-bootstrap'
+import {Card, Image} from 'react-bootstrap'
 
 const PlanCard = ({plan}) => {
     return (
-        <Card className='mt-3 h-75'>
+        <Card className='mt-3'>
             <Card.Body>
                 <Card.Title>{plan.title}</Card.Title>
-                <Card.Text>*</Card.Text>
+                <Image  src={process.env.REACT_APP_API_URL + plan.img} fluid/>
             </Card.Body>
         </Card>
     );

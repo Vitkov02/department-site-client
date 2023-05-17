@@ -14,22 +14,22 @@ const NavBar = () => {
         <Container>
           <Container className="d-flex">
             <LinkContainer to={TEACHER_ROUTE}>
-              <Nav.Link>TEACHER</Nav.Link>
+              <Nav.Link>Викладачі</Nav.Link>
             </LinkContainer>
             <LinkContainer to={AUDIENCE_ROUTE}>
-              <Nav.Link className="ms-3">AUDIENCE</Nav.Link>
+              <Nav.Link className="ms-3">Аудиторії</Nav.Link>
             </LinkContainer>
             <LinkContainer to={WORKS_ROUTE}>
-              <Nav.Link className="ms-3">WORKS</Nav.Link>
+              <Nav.Link className="ms-3">Роботи студентів</Nav.Link>
             </LinkContainer>
             <LinkContainer to={PLANS_ROUTE}>
-              <Nav.Link className="ms-3">STUDY PLANS</Nav.Link>
+              <Nav.Link className="ms-3">Учбові плани</Nav.Link>
             </LinkContainer>
           </Container>
           {user.isAuth ? (
             <Nav>
               <Button className="me-2" variant="outline-dark" onClick={() => navigate(ADMIN_ROUTE)}>Admin</Button>
-              <Button variant="outline-dark" onClick={() => navigate(LOGIN_ROUTE)}>Выйти</Button>
+              <Button variant="outline-dark" onClick={() => navigate(LOGIN_ROUTE)}>Вийти</Button>
             </Nav>
           ) : (
             <Nav>
@@ -37,7 +37,7 @@ const NavBar = () => {
                 variant="outline-dark"
                 
               >
-                Авторизация
+                Авторизація
               </Button>
             </Nav>
           )}
